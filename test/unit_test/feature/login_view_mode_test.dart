@@ -12,7 +12,7 @@ void main(){
       String password = 'abc'; // incorrect password
       when(() => mockSharedPreferences.getString(email)).thenReturn('123456');
 
-        final result = loginViewModel.login(email, password);
+      final result = loginViewModel.login(email, password);
       expect(result, false);
     });
 
